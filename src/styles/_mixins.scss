@@ -1,0 +1,8 @@
+@mixin allTransition() {
+  transition: all .3s ease-in-out;
+}
+
+@mixin lightShadow() {
+  box-shadow: 0 0 10px lightgrey;
+}
+

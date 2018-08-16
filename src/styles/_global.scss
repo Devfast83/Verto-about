@@ -1,0 +1,30 @@
+@import 'variables';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  font-family: $font-primary;
+  font-size: $font-size-normal;
+  color: $color-fonts;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: $font-size-h1;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: $font-size-h2;
+}
+
+a {
+  color: $color-fonts;
+  text-decoration: none;
+
+  &:visited, &:focused, &:hover {
+    text-decoration: none;
+    color: $color-fonts;
+  }
+}
