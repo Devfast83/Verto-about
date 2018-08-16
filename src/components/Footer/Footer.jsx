@@ -11,12 +11,11 @@ const Footer = () => {
         <FooterColumnItem to="/about">Team</FooterColumnItem>
       </FooterColumn>
       <FooterColumn title="Help">
-        <FooterColumnItem to="/about">About</FooterColumnItem>
-        <FooterColumnItem to="/about">Team</FooterColumnItem>
+        <FooterColumnItem to="/about">Contact Us</FooterColumnItem>
       </FooterColumn>
       <FooterColumn title="Privacy">
-        <FooterColumnItem to="/about">About</FooterColumnItem>
-        <FooterColumnItem to="/about">Team</FooterColumnItem>
+        <FooterColumnItem to="/privacy">Privacy Policy</FooterColumnItem>
+        <FooterColumnItem to="/tou">Terms of Use</FooterColumnItem>
       </FooterColumn>
     </div>
   )

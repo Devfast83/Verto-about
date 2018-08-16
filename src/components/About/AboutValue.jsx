@@ -1,10 +1,11 @@
 import React  from 'react';
 
 const AboutValue = ({ icon, title }) => {
+  var iconName = 'fa fa-' + icon;
   return (
     <div className="about__value">
-      <i className="fa fa-`{icon}`" ></i>
-      <span className="about__text-title">
+      <i className={iconName} ></i>
+      <span className="about__value-title">
         {title}
       </span>
     </div>

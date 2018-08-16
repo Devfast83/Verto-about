@@ -1,4 +1,6 @@
 import React  from 'react';
+import AboutText from './AboutText';
+import AboutValue from './AboutValue';
 
 import './About.css';
 
