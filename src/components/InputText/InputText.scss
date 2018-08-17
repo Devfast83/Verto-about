@@ -1,0 +1,25 @@
+@import 'styles/variables';
+
+.input {
+  padding: 20px;
+  outline: none;
+  width: 225px;
+  font-size: 15px;
+  color: $color-fonts;
+  border: none;
+  border-radius: 6px;
+}
+
+@media (max-width: 75em) {
+  .input {
+    padding: 18px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .input {
+    padding: 16px;
+    font-size: 12px;
+  }
+}

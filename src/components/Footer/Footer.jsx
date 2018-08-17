@@ -11,7 +11,7 @@ const Footer = () => {
         <FooterColumnItem to="/about">Team</FooterColumnItem>
       </FooterColumn>
       <FooterColumn title="Help">
-        <FooterColumnItem to="/about">Contact Us</FooterColumnItem>
+        <FooterColumnItem to="mailto:pablofer@bu.edu">Contact Us</FooterColumnItem>
       </FooterColumn>
       <FooterColumn title="Privacy">
         <FooterColumnItem to="/privacy">Privacy Policy</FooterColumnItem>

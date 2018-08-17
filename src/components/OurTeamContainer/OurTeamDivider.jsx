@@ -1,12 +1,12 @@
 import React from 'react';
 
-const AboutDivider = ({ iconName }) => {
+const OurTeamDivider = ({ iconName }) => {
   var iconClass = 'fa fa-' + iconName;
   return (
-    <div className="about__divider">
+    <div className="ourTeamContainer__divider">
       <i className={iconClass} ></i>
     </div>
   )
 };
 
-export default AboutDivider;
+export default OurTeamDivider;

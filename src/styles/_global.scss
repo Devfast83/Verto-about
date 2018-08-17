@@ -28,3 +28,10 @@ a {
     color: $color-fonts;
   }
 }
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}

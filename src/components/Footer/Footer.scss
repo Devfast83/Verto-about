@@ -1,9 +1,11 @@
 @import 'styles/variables';
 
 .footer {
-  padding: 50px 0 20px;
+  padding: 60px 0 30px;
   display: flex;
   justify-content: space-evenly;
+  font-size: 20px;
+  color: $color-fonts;
 
   &__column {
     display: flex;
@@ -12,10 +14,44 @@
 
     &-heading {
       font-weight:  700;
+      margin-bottom: 10px;
     }
 
     &-item {
-      
+      font-weight: 300;
+      line-height: 30px;
     }
   }
+}
+
+@media (max-width: 75em) {
+  .footer {
+    font-size: 18px;
+
+    &-heading {
+      margin-bottom: 9px;
+    }
+
+    &-item {
+      line-height: 27px;
+    }
+  }
+}
+
+@media (max-width: 56.25em) {
+  .footer {
+    font-size: 16px;
+
+    &-heading {
+      margin-bottom: 8px;
+    }
+
+    &-item {
+      line-height: 24px;
+    }
+  }
+}
+
+@media (max-width: 37.5em) {
+
 }

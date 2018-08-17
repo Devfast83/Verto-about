@@ -1,14 +1,40 @@
 @import 'styles/variables';
+@import 'styles/mixins';
 
-.button {
-  padding: 9px 18px;
+.submit {
+  padding: 20px;
+  font-size: 15px;
+  color: $color-fonts;
+  background: $color-white;
   border-radius: $radius-normal;
-  
-  &--primary {
+  border: 1px solid;
+  margin: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  cursor: pointer;
+  @include allTransition();
+  outline: none;
 
+  &:hover {
+    color: $color-white;
+    border: 1px solid $color-active;
+    background: $color-active;
   }
+}
 
-  &--secondary {
+@media (max-width: 75em) {
+  .submit {
+    padding: 18px;
+    font-size: 14px;
+    margin: 9px;
+  }
+}
 
+@media (max-width: 56.25em) {
+  .submit {
+    padding: 16px;
+    font-size: 12px;
+    margin: 8px;
   }
 }

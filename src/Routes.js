@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Navigation from './components/Navigation/Navigation';
-import About from './components/About/About';
-import Wrapper from './components/Wrapper/Wrapper';
-import Subscribe from './components/Subscribe/Subscribe';
+import AboutContainer from './components/AboutContainer/AboutContainer';
+import OurTeamContainer from './components/OurTeamContainer/OurTeamContainer';
+import SubscribeForm from './components/SubscribeForm/SubscribeForm';
 import Footer from './components/Footer/Footer';
 
 class Routes extends Component {
@@ -10,9 +10,9 @@ class Routes extends Component {
     return (
       <div>
         <Navigation />
-        <About />
-        <Wrapper />
-        <Subscribe />
+        <AboutContainer />
+        <OurTeamContainer />
+        <SubscribeForm />
         <Footer />
       </div>
     );

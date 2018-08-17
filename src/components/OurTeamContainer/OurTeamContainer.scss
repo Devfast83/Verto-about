@@ -1,0 +1,156 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.ourTeamContainer {
+  padding: 50px 15vw;
+  margin-top: 50px;
+  text-align: center;
+
+  &__divider {
+    height: 2px;
+    width: 100%;
+    background: $color-third;
+    position: relative;
+    margin: 20px auto 100px auto;
+
+    i {
+      color: $color-primary;
+      position: absolute;
+      padding: 20px 30px;
+      background: white;
+      font-size: 50px;
+      top: 50%;
+      left: 50%;
+      @include allTranslate();
+    }
+  }
+
+  &-title {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $color-primary;
+    margin-bottom: 50px;
+  }
+
+  &__members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &-member {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 20px;
+
+      &-photo {
+        height: 170px;
+        width: 170px;
+        background: $color-secondary;
+        border-radius: 50%;
+        padding: 20px;
+      }
+
+      &-name {
+        margin-top: 10px;
+        font-size: 25px;
+        font-weight: 400;
+      }
+
+      &-position {
+        font-size: 25px;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+@media (max-width: 75em) {
+  .ourTeamContainer {
+    padding: 45px 15vw;
+    margin-top: 45px;
+
+    &__divider {
+      margin: 18px auto 90px auto;
+
+      i {
+        padding: 18px 27px;
+        font-size: 45px;
+      }
+    }
+
+    &-title {
+      font-size: 45px;
+      margin-bottom: 45px;
+    }
+
+    &__members {
+      &-member {
+        margin: 18px;
+
+        &-photo {
+          height: 153px;
+          width: 153px;
+          padding: 18px;
+        }
+
+        &-name {
+          margin-top: 9px;
+          font-size: 22.5px;
+        }
+
+        &-position {
+          font-size: 22.5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 56.25em) {
+  .ourTeamContainer {
+    padding: 40px 15vw;
+    margin-top: 40px;
+
+    &__divider {
+      margin: 16px auto 80px auto;
+
+      i {
+        padding: 16px 24px;
+        font-size: 40px;
+      }
+    }
+
+    &-title {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+
+    &__members {
+      &-member {
+        margin: 16px;
+
+        &-photo {
+          height: 136px;
+          width: 136px;
+          padding: 16px;
+        }
+
+        &-name {
+          margin-top: 8px;
+          font-size: 20px;
+        }
+
+        &-position {
+          font-size: 22.5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 37.5em) {
+
+}
